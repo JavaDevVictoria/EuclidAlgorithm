@@ -1,11 +1,11 @@
 import sys
 
-a = int(sys.argv[1])
-b = int(sys.argv[2])
+a = int(input("Enter a number: "))
+b = int(input("Enter another number: "))
 
 def euclid(a, b):
 	return b and euclid(b, a%b) or a
 
 result = euclid(a, b)
 
-print result
+print("The highest common divisor is {} ".format(result))
